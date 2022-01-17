@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Наш сайт shooter</title>
+	<style>
+		body {
+			background: #1E1E1E;
+			color: #499CB3;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<p><a href="oursite.html"><img src="img/shooter.png" 
+		width="240" height="53" alt="lorem"></a></p>
+    <button onclick="document.location='mainoperator.html'">На главную оператора</button>
+    <form onsubmit="return false" id="form">
+        <br><br><h1>Клиенты с нашего сайта shooterclub.ru:</h1>
+        <p><input type='button' value='Клиент с нашего сайта, купил наш сертификат' onclick='document.getElementById("div1").style.display = "block";'></p>
+        <h3><div style='display:none' id="div1">Записываешь в таблицу. Форма записи {Имя, отстрел комбо (какое), кол-во человек, номер телефона}</h3></div>
+        <br><br><br><br><h2>Клиент с нашего сайта, не знает чего хочет и хотел бы определиться на месте:</h2>
+        <p><input type='button' value='Будние дни' onclick='document.getElementById("div2").style.display = "block";'></p>
+        <h3><div style='display:none' id="div2">Записываешь в Таблицу. Форма записи {Имя, кол-во человек, определится(-ятся) на месте, номер телефона}</h3></div>
+        <p><input type='button' value='Выходные/праздничные дни' onclick='document.getElementById("div3").style.display = "block";'></p>
+        <h3><div style='display:none' id="div3">Говоришь "Для посещения клуба в выходной/праздничный день необходимо предварительно приобрести любой сертификат на нашем сайте shooterclub.ru. Он будет являтся подтверждением бронирования вашей записи. Сейчас я могу предварительно Вас записать на желаемое время и дату, потом вы приобретаете сертификат, по имени и номеру телефона - запись будет подтверждена, дополнительно перезванивать не нужно. <p>Записываешь по Форме записи {Имя, кол-во человек, отстрел (сертификат(-ы) который(-ые) купили), номер телефона}</p></h3></div>
+        </form>
+</body>
+</html>
