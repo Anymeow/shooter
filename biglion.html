@@ -22,9 +22,18 @@
     <form onsubmit="return false" id="form">
         <h1>Биглион:</h1>
         <textarea style="font-family: tahoma; font-size: 20px" id="text" cols=40 rows=6 readonly>В стоимость купона входит 10 выстрелов из винтовки, 1 магазин из пистолета, 100 выстрелов из автомата, 5 выстрелов из лука, интструктаж и обучение на каждого (требуется предварительная запись)</textarea><br>
-		<h2>Вы уже приобрели купон?</h2>
-        <input type='button' value='Да' onclick='document.getElementById("div1").style.display = "block";'>
+		<br><h2>Шаг 1. Вы уже приобрели купон?</h2>
+        <input type='button' value='Ответ клиента "Да""' onclick='document.getElementById("div1").style.display = "block";'>
         <h3><div style='display:none' id="div1">Таблица Shooter, Лист Записи записать клиента в удобное время и дату. В будни в любое время, в вых. с 10:00 до 14:00. Форма записи {Имя, кол-во человек, Биглион, номер телефона}</h3></div>
+		<input type='button' value='Ответ клиента "Нет"' onclick='document.getElementById("div2").style.display = "block";'>
+        <h3><div style='display:none' id="div2">Говоришь "Я могу предложить Вам акционное предложение, наши собственные купоны, состав по выстрелам в них такой же, но с дополнительной скидкой и на них не действует ограничение в праздничный/выходной день. <u>(На 1-го 850р, на 2-их 1600р, на 4-х 3100р. Запись по этим сертификатам на любое время)</u></h3></div>
+		<br><h2>Шаг 2. Если клиент согласен на купоны, говоришь "Вам удобно будет сейчас зайти на наш сайт shooterclub.ru?"</h2>
+		<input type='button' value='Ответ клиента "Да""' onclick='document.getElementById("div3").style.display = "block";'>
+        <h3><div style='display:none' id="div3">Говоришь "На нашем сайте справа снизу будет желтая иконка чата, нажмите на неё и в нём напишите слово "Акция" и Ваше имя, я отправлю Вам ссылку на закрытую страницу для покупки купона." 
+		Форма записи {Имя, кол-во человек, Биглион ОНМ, номер телефона}</h3></div>
+		<input type='button' value='Ответ клиента "Нет (я в дороге/на работе и т.д.)"' onclick='document.getElementById("div4").style.display = "block";'>
+        <h3><div style='display:none' id="div4">Говоришь "Хорошо, я отправлю Вам смс с ссылкой, приобретёте позже"
+		Форма записи {Имя, кол-во человек, Биглион ОНМ, номер телефона}</h3></div>
         </form>
 </body>
 </html>
